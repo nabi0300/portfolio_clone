@@ -1,0 +1,593 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #FF6464;
+    --secondary: #00A8CC;
+    --dark: #21243D;
+    --light: #8695A4;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+}
+
+.container {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.lg {
+    max-width: 55rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.navbar  {
+    padding: 1.6875rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar a .material-symbols-outlined {
+    color: var(--dark);
+    font-size: 30px;
+    font-weight: 500;
+    display: none;
+}
+
+.navbar .navbar_items {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar .navbar_items li {
+    margin-left: 2.5rem;
+}
+
+.navbar .navbar_items li a {
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--dark);
+    display: inline-block;
+    transition: all .2s ease-in-out;
+}
+
+.navbar .navbar_items li a:hover{
+    color: var(--primary);
+}
+
+
+.navbar .navbar_items li a.blog_active {
+    color: var(--primary);
+}
+
+.navbar .navbar_items li a.work_active {
+    color: var(--primary);
+}
+
+.hero_section{
+    margin-top: 7.75rem;
+}
+
+.hero_section .client_info-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero_section .client_info {
+    max-width: 60%;
+}
+
+.hero_section .client_info h1{
+    font-weight: 700;
+    font-size: 2.75rem;
+    line-height: 3.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero_section .client_info p{
+    margin-bottom: 1rem;
+    line-height: 1.47rem;
+}
+
+.hero_section .client_info a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    background-color: var(--primary);
+    padding: .56rem 1.25rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-bottom: 4.44rem;
+}
+
+.post_section {
+    background-color: #EDF7FA;
+    padding-bottom: 1rem;
+}
+
+
+.post_section .recent_posts {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.post_section .recent_posts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post_section .recent_posts h3{
+    font-weight: 400;
+    font-size: 1.375rem;
+    text-transform: capitalize;
+    padding: 1rem 0;
+}
+
+.post_section .recent_posts a{
+    text-decoration: none;
+    color: var(--secondary);
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 1rem 0;
+}
+
+.post_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post_wrap .post {
+    max-width: calc(50% - .8rem);
+    background-color: #fff;
+    border-radius: .25rem;
+    margin-bottom: 2rem;
+}
+
+
+.post_wrap .post h2 {
+    font-weight: 700;
+    font-size: 1.625rem;
+    padding: 1.5rem;
+}
+
+.post_wrap .post .design_detail {
+    display: flex;
+    list-style-type: none;
+    padding: 0 1.5rem;
+}
+
+.post_wrap .post .design_detail li {
+    color: var(--dark);
+    font-size: 1.125rem;
+}
+
+.post_wrap .post .design_detail li:first-child {
+    border-right: var(--dark) 2px solid;
+    padding-right: 1rem;
+}
+
+.post_wrap .post .design_detail li:nth-child(2) {
+    padding-left: 1rem;
+}
+
+.post_wrap .post p {
+    padding: 1.5rem;
+}
+
+.work_section h3 {
+    font-weight: 400;
+    font-size: 1.375rem;
+    text-transform: capitalize;
+    padding: 1rem 0;
+}
+
+.work_section h3.work_heading {
+    font-weight: 900;
+    font-size: 44px;
+    text-transform: capitalize;
+}
+
+.work_card-wrapper .work_card {
+    display: flex;
+    padding: 1.5rem 0;
+}
+
+
+.work_card-wrapper .work_card figcaption {
+    padding-left: 1.5rem;
+}
+
+.work_card-wrapper .work_card img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+}
+
+.work_card-wrapper .work_card h2 {
+    font-weight: 700;
+    font-size: 1.875rem;
+    text-transform: capitalize;
+    padding-bottom: .8125rem;
+}
+
+.work_card-wrapper .work_card ul{
+    display: flex;
+    list-style-type: none;
+    padding-bottom: 1rem;
+}
+
+.work_card-wrapper .work_card .sm_p {
+    display: none;
+}
+
+
+.work_card-wrapper .work_card ul li:first-child{
+    background-color: var(--dark);
+    color: white;
+    border-radius: 1rem;
+    font-weight: 900;
+    padding: 0 .6rem;
+    font-size: 1.025rem;
+    display: inline-block;
+}
+
+.work_card-wrapper .work_card ul li:nth-child(2){
+    color: var(--light);
+    font-size: 1.125rem;
+    text-transform: capitalize;
+    padding-left: 2.25rem;
+}
+
+
+.work_card-wrapper .work_card p{
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+.footer_wrap {
+    padding-top: 4.1875rem;
+}
+
+.social_lnks {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.social_lnks li a{
+    color: var(--dark);
+    font-size: 30px;
+    display: inline-block;
+    padding: 1rem;
+}
+
+.social_lnks-wrapper span {
+    display: block;
+    text-align: center;
+    padding-bottom: 54px;
+}
+
+.blog_section {
+    margin-top: 6.625rem;
+}
+
+.blog_section h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.blog_section .ui_interaction-wrapper .ui_interaction-card{
+    padding: 1rem 0;
+}
+
+
+.blog_section .ui_interaction-wrapper .ui_interaction-card h3{
+    font-weight: 500;
+    font-size: 1.875rem;
+}
+
+
+.ui_interaction-wrapper .ui_interaction-card .ui_detail {
+    display: flex;
+    list-style-type: none;
+    padding-top: 1rem;
+}
+.ui_interaction-wrapper .ui_interaction-card .ui_detail li {
+    color: var(--dark);
+    font-size: 1.125rem;
+}
+
+.ui_interaction-wrapper .ui_interaction-card .ui_detail li:first-child {
+    border-right: var(--dark) 2px solid;
+    padding-right: 1rem;
+}
+
+.ui_interaction-wrapper .ui_interaction-card .ui_detail li:nth-child(2) {
+    padding-left: 1rem;
+}
+
+.ui_interaction-wrapper .ui_interaction-card p {
+    padding: 1rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media ( (max-width:767.98px) and (min-width:575.98px)){
+    .work_card-wrapper .work_card .lg_p{
+            display: none;
+        }
+    
+        
+    .work_card-wrapper .work_card .sm_p {
+        display: block;
+    }
+
+
+    
+        
+    }
+    
+ /* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+ 
+    .work_card-wrapper .work_card {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .work_card-wrapper .work_card figcaption {
+        padding-left: 0;
+    }
+    
+    
+    .work_card-wrapper .work_card h2 {
+        font-weight: 700;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        padding: 1rem 0 .5rem 0;
+    }
+    
+    .work_card-wrapper .work_card ul{
+        display: flex;
+        list-style-type: none;
+        padding-bottom: 1.375rem;
+    }
+    
+    .work_card-wrapper .work_card ul li:first-child{
+        background-color: var(--dark);
+        color: white;
+        border-radius: 1rem;
+        font-weight: 900;
+        padding: 0 .4rem;
+        font-size: 1rem;
+        display: inline-block;
+    }
+    
+    .work_card-wrapper .work_card ul li:nth-child(2){
+        color: var(--light);
+        font-size: 1rem;
+        text-transform: capitalize;
+        padding-left: 2.25rem;
+    }
+
+    
+    .work_card-wrapper .work_card .sm_p {
+        display: none;
+    }
+    
+    .work_card-wrapper .work_card .lg_p {
+        display: block;
+    }
+
+ }
+
+/* /Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+       
+.navbar  {
+    padding: .4rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+    
+.navbar a .material-symbols-outlined {
+    color: var(--dark);
+    font-size: 40px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+
+.navbar .navbar_items {
+    display: none;
+}
+
+
+.hero_section{
+    margin-top: 2.75rem;
+}
+
+.hero_section .client_info-wrap {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+}
+
+.client_img  img{
+    width: 170px;
+    height: 170px;
+}
+
+
+.hero_section .client_info h1{
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin: 1rem 0;
+}
+
+.hero_section .client_info p{
+    margin-bottom: 1.67rem;
+    line-height: 1.47rem;
+}
+
+.hero_section .client_info a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    background-color: var(--primary);
+    padding: .56rem 1.25rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 4.44rem;
+}
+
+
+
+.post_wrap .post {
+    max-width: 100%;
+
+}
+
+.post_wrap {
+    display: block;
+}
+
+.post_section .recent_posts a{
+    display: none;
+}
+
+
+.post_section .recent_posts h2{
+    font-weight: 400;
+    font-size: 1.375rem;
+    text-transform: capitalize;
+    padding: 1rem 0;
+    margin: 0 auto;
+}
+
+
+
+.post_wrap .post h1 {
+    font-weight: 700;
+    font-size: 1.375rem;
+    padding: 1.5rem;
+}
+
+
+.post_wrap .post .design_detail li {
+    color: var(--dark);
+    font-size: 1rem;
+}
+
+
+.work_card-wrapper .work_card h2 {
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    padding-bottom: .8125rem;
+}
+
+
+.blog_section {
+    margin-top: 2.25rem;
+}
+
+   
+.blog_section h2{
+    font-size: 1.875rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+    
+.blog_section .ui_interaction-wrapper .ui_interaction-card h3{
+    font-weight: 500;
+    font-size: 1.625rem;
+}
+
+
+.ui_interaction-wrapper .ui_interaction-card .ui_detail {
+    display: flex;
+    list-style-type: none;
+}
+.ui_interaction-wrapper .ui_interaction-card .ui_detail li {
+    color: var(--dark);
+    font-size: 1rem;
+}
+
+.ui_interaction-wrapper .ui_interaction-card .ui_detail li:first-child {
+    border-right: var(--dark) 2px solid;
+    padding-right: 1rem;
+}
+
+.ui_interaction-wrapper .ui_interaction-card .ui_detail li:nth-child(2) {
+    padding-left: 1rem;
+}
+
+.ui_interaction-wrapper .ui_interaction-card p {
+    padding: 1.5rem 0;
+}
+
+
+
+
+
+ }
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    
+ }
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { 
+    
+}
+
